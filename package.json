@@ -1,0 +1,23 @@
+{
+  "name": "webpack-merge-plus",
+  "version": "0.0.1",
+  "description": "Extends webpack-merge to handle arrays and functions",
+  "author": "Marcos Neves <marcos.neves@gmail.com> (http://neves.github.io/)",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "webpack",
+    "merge",
+    "plugin",
+    "config"
+  ],
+  "devDependencies": {
+    "jest": "^17.0.3"
+  },
+  "dependencies": {
+    "webpack-merge": "^0.17.0"
+  }
+}
