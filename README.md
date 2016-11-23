@@ -52,7 +52,7 @@ This project uses [Jest](https://facebook.github.io/jest/) for testing.
 
 After cloning and installing dependencies using *yarn* or *npm*, just run `npm test`.
 
-# Contribution
+## Contribution
 
 You're free to contribute to this project by submitting [issues](/issues) and/or [pull requests](/pulls). This project is test-driven, so keep in mind that every change and new feature should be covered by tests. Your name will be added to the hall of fame ;)
 
