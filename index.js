@@ -5,7 +5,7 @@ module.exports = function () {
 }
 
 function mergeArray (items) {
-  return items.reduce((a, b) => mergePlus(a, b))
+  return items.reduce((a, b) => mergePlus(a, b), {})
 }
 
 function toArray (arrayLike) {
