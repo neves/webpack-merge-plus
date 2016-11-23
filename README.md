@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/neves/webpack-merge-plus.svg?branch=master)](https://travis-ci.org/neves/webpack-merge-plus)
+
 # Webpack Merge Plus
 
 Extends webpack-merge to handle nested arrays and functions, recursively
