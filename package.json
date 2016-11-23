@@ -5,6 +5,14 @@
   "author": "Marcos Neves <marcos.neves@gmail.com> (http://neves.github.io/)",
   "license": "MIT",
   "main": "index.js",
+  "homepage": "https://github.com/neves/webpack-merge-plus",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neves/webpack-merge-plus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neves/webpack-merge-plus/issues"
+  },
   "files": [
     "index.js"
   ],
@@ -17,6 +25,9 @@
     "plugin",
     "config"
   ],
+  "engines": {
+    "node": ">=0.12"
+  },
   "devDependencies": {
     "jest": "^17.0.3"
   },
