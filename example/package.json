@@ -1,0 +1,12 @@
+{
+  "name": "webpack-merge-plus-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development DEBUG=true webpack",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.3"
+  }
+}

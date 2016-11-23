@@ -69,7 +69,9 @@ test('merge nested array with function', () => {
       {b: 'b'}
     ]
   ]
-  result = {foo: 'foo', a: 'a', f: {foo: 'foo', a: 'a'}, bar: 'bar', jon: 'jon', doo: 'doo', b: 'b'}
+  result = {foo: 'foo', a: 'a',
+            f: {foo: 'foo', a: 'a'},
+            bar: 'bar', jon: 'jon', doo: 'doo', b: 'b'}
 
   expect(merge(a, b)).toEqual(result)
 })
@@ -94,7 +96,14 @@ test('function that returns array', () => {
     ]
   ]
 
-  result = {foo: 'foo', a: 'a', f: {foo: 'foo', a: 'a'}, bar: 'bar', jon: 'jon', doo: 'doo', b: 'b'}
+  result = {foo: 'foo', a: 'a',
+            f: {foo: 'foo', a: 'a'},
+            bar: 'bar', jon: 'jon', doo: 'doo', b: 'b'}
 
   expect(merge(a, b)).toEqual(result)
+})
+
+test('example', () => {
+  const config = require('./example/webpack.config')
+  expect(config.output.publicPath).toBe('http://0.0.0.0:4000/')
 })
