@@ -110,6 +110,12 @@ test('single nested array', () => {
   expect(merge(a)).toEqual(result)
 })
 
+test('merge siblings', () => {
+  a = [{foo: 'foo'}, [m => [{bar: m.foo}]]]
+  result = {foo: 'foo', bar: 'foo'}
+  expect(merge(a)).toEqual(result)
+})
+
 test('example', () => {
   const config = require('./example/webpack.config')
   expect(config.output.publicPath).toBe('http://0.0.0.0:4000/')

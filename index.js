@@ -4,8 +4,8 @@ module.exports = function () {
   return mergeArray(toArray(arguments))
 }
 
-function mergeArray (items) {
-  return items.reduce((a, b) => mergePlus(a, b), {})
+function mergeArray () {
+  return toArray(arguments).reduce((a, b) => mergePlus(a, b), {})
 }
 
 function toArray (arrayLike) {
@@ -25,7 +25,7 @@ function convert (item, before) {
   }
 
   if (Array.isArray(item)) {
-    item = mergeArray(item)
+    item = mergeArray(before, item)
   }
 
   return item
