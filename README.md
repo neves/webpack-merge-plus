@@ -37,7 +37,7 @@ module.exports = require('mergePlus')([
 
 You can run from example folder as `webpack --config example/webpack.config.single-file.js`
 
-This makes more sense when splitted in multiple files. Check **example** folder for a sample.
+This makes more sense when splitted in multiple files. Check [example](https://github.com/neves/webpack-merge-plus/tree/master/example) folder for a sample.
 
 ## Installation
 
@@ -57,7 +57,7 @@ After cloning and installing dependencies using *yarn* or *npm*, just run `npm t
 
 ## Contribution
 
-You're free to contribute to this project by submitting [issues](/issues) and/or [pull requests](/pulls). This project is test-driven, so keep in mind that every change and new feature should be covered by tests. Your name will be added to the hall of fame ;)
+You're free to contribute to this project by submitting [issues](https://github.com/neves/webpack-merge-plus/issues) and/or [pull requests](https://github.com/neves/webpack-merge-plus/pulls). This project is test-driven, so keep in mind that every change and new feature should be covered by tests. Your name will be added to the hall of fame ;)
 
 ## License
 
