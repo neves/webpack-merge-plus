@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/neves/webpack-merge-plus.svg?branch=master)](https://travis-ci.org/neves/webpack-merge-plus)
+[![codecov](https://codecov.io/gh/neves/webpack-merge-plus/branch/master/graph/badge.svg)](https://codecov.io/gh/neves/webpack-merge-plus)
 [![npm](https://img.shields.io/npm/v/webpack-merge-plus.svg)]()
 # Webpack Merge Plus
 
