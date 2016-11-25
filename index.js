@@ -13,22 +13,21 @@ function toArray (arrayLike) {
 }
 
 function mergePlus (a, b) {
-  a = convert(a, {})
-  b = convert(b, a)
+  a = callIfFunction(a, {})
+  if (Array.isArray(a)) {
+    a = mergeArray(a)
+  }
 
-  return merge(a, b)
+  b = callIfFunction(b, a)
+  if (Array.isArray(b)) {
+    return mergeArray(a, b)
+  } else {
+    return merge(a, b)
+  }
 }
 
-function convert (item, before) {
-  if (isFunction(item)) {
-    item = item(before)
-  }
-
-  if (Array.isArray(item)) {
-    item = mergeArray(before, item)
-  }
-
-  return item
+function callIfFunction (item, before) {
+  return isFunction(item) ? item(before) : item
 }
 
 function isFunction (f) {

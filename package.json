@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "test": "jest --coverage",
-    "lint": "eslint --cache --ignore-path .gitignore .",
+    "lint": "eslint --format=node_modules/eslint-codeframe-formatter index.js",
     "precommit": "npm run lint",
     "prepush": "npm run lint && npm run test"
   },
@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "eslint": "^3.10.2",
+    "eslint-codeframe-formatter": "^1.0.2",
     "eslint-config-standard": "^6.2.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",

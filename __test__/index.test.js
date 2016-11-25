@@ -1,4 +1,4 @@
-const merge = require('./index')
+const merge = require('../index')
 
 test('behave like webpack-merge', () => {
   a = {foo: 'foo'}
@@ -114,6 +114,12 @@ test('merge siblings', () => {
   a = [{foo: 'foo'}, [m => [{bar: m.foo}]]]
   result = {foo: 'foo', bar: 'foo'}
   expect(merge(a)).toEqual(result)
+})
+
+test('bug: merging twice and duplicating sub-array', () => {
+  list = [{plugins: [1]}, []]
+  result = {plugins: [1]}
+  expect(merge(list)).toEqual(result)
 })
 
 test.skip('example', () => {
