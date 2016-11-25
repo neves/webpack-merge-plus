@@ -14,16 +14,9 @@ function toArray (arrayLike) {
 
 function mergePlus (a, b) {
   a = callIfFunction(a, {})
-  if (Array.isArray(a)) {
-    a = mergeArray(a)
-  }
-
   b = callIfFunction(b, a)
-  if (Array.isArray(b)) {
-    return mergeArray(a, b)
-  } else {
-    return merge(a, b)
-  }
+
+  return Array.isArray(b) ? mergeArray(a, b) : merge(a, b)
 }
 
 function callIfFunction (item, before) {

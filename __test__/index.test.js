@@ -122,6 +122,12 @@ test('bug: merging twice and duplicating sub-array', () => {
   expect(merge(list)).toEqual(result)
 })
 
+test('first item is array', () => {
+  list = [() => [{plugins: [1]}, {plugins: [2]}], [{plugins: [3]}]]
+  result = {plugins: [1, 2, 3]}
+  expect(merge(list)).toEqual(result)
+})
+
 test.skip('example', () => {
   const config = require('./example/webpack.config')
   expect(config.output.publicPath).toBe('http://0.0.0.0:4000/')
